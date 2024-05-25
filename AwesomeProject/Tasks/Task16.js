@@ -11,11 +11,11 @@ const Task16 = () =>  {
     const toggleName = () => {
       setShowName(!showName);
     };
-  
+    //  <Button title={showName ? 'Hide' : 'Show'} onPress={toggleName} />
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         
-        <Button title={showName ? 'Hide' : 'Show'} onPress={toggleName} />
+        <Button title= "Show" onPress={toggleName} />
 
         {showName && <Text>Qasem Qudah</Text>}
 
