@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import {View , Text , Button} from 'react-native';
+import {StyleSheet,View , Text , Button} from 'react-native';
 
 
 
@@ -13,7 +13,7 @@ const toggleName = () =>{
 }
 
 return(
-<View style = {{flex:1,justifyContent:'center',alignItems:'center'}}>
+<View style = {style.containers}>
 <Button title={ShowName ? 'Show':'Hide'} onPress={toggleName}> </Button>
  
  {ShowName && <Text>Qasem Qudah</Text>}
@@ -24,5 +24,13 @@ return(
 
 }
 
+
+const style = StyleSheet.create({
+    containers: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  });
 
 export default Task17;

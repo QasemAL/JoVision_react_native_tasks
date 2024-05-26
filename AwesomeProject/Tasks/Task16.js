@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
 import {
-Text,View,Button,
+Text,View,Button,StyleSheet
 } from 'react-native';
 
 const Task16 = () =>  {
@@ -13,7 +13,7 @@ const Task16 = () =>  {
     };
     //  <Button title={showName ? 'Hide' : 'Show'} onPress={toggleName} />
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={style.containers}>
         
         <Button title= "Show" onPress={toggleName} />
 
@@ -22,5 +22,13 @@ const Task16 = () =>  {
       </View>
     );
 }
+
+const style = StyleSheet.create({
+  containers: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
 export default Task16;
