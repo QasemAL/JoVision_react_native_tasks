@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import {useState } from "react";
 import { StyleSheet,View,Button, Text } from "react-native";
 import MyClassPage from "../CustomClasses/MyClassPage";
 

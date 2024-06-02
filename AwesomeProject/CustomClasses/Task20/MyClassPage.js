@@ -1,7 +1,16 @@
 import React from "react";
-import { View,Button,StyleSheet, Text } from "react-native";
+import { View, Text } from "react-native";
 
 class MyClassPage extends React.Component{
+
+
+    componentDidMount() {
+        console.log('MyClassPage loaded');
+      }
+    
+      componentWillUnmount() {
+        console.log('MyClassPage unloaded');
+      }
 
 render(){
 
