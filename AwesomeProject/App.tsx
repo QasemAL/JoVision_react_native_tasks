@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {StyleSheet,View , Text , Button} from 'react-native';
+import { Provider } from 'react-redux'
+import { store } from './Componets/Task39/store';
 import Task16 from './Tasks/Task16';
 import Task17 from './Tasks/Task17';
 import Task18 from './Tasks/Task18';
@@ -23,6 +25,7 @@ import Task35 from './Tasks/Task35';
 import Task36 from './Tasks/Task36';
 import Task37 from './Tasks/Task37';
 import Task38 from './Tasks/Task38';
+import Task39 from './Tasks/Task39';
 // This where everything will be rendered to the screen
 
 export default class App extends Component {
@@ -54,7 +57,10 @@ export default class App extends Component {
         {/*<Task35></Task35>*/}
         {/*<Task36></Task36>*/}
         {/*<Task37></Task37>*/}
-           <Task38></Task38>
+        {/*<Task38></Task38>*/}
+
+        <Provider store={store}><Task39></Task39></Provider>
+
         </View>
     
      
