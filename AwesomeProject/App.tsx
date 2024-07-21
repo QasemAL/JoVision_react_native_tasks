@@ -26,6 +26,7 @@ import Task36 from './Tasks/Task36';
 import Task37 from './Tasks/Task37';
 import Task38 from './Tasks/Task38';
 import Task39 from './Tasks/Task39';
+import Task40 from './Tasks/Task40';
 // This where everything will be rendered to the screen
 
 export default class App extends Component {
@@ -59,7 +60,9 @@ export default class App extends Component {
         {/*<Task37></Task37>*/}
         {/*<Task38></Task38>*/}
 
-        <Provider store={store}><Task39></Task39></Provider>
+        {/*<Provider store={store}><Task39></Task39></Provider>*/}
+
+        <Provider store={store}><Task40></Task40></Provider>
 
         </View>
     
