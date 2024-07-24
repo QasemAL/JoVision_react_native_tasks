@@ -28,6 +28,7 @@ import Task38 from './Tasks/Task38';
 import Task39 from './Tasks/Task39';
 import Task40 from './Tasks/Task40';
 import Task41 from './Tasks/Task41+42/Task41/Task41';
+import Task42 from './Tasks/Task41+42/Task42/Task42';
 
 
 
@@ -67,7 +68,8 @@ export default class App extends Component {
 
         {/*<Provider store={store}><Task40></Task40></Provider>*/}
 
-        <Task41></Task41>
+        {/*<Task41></Task41>*/}
+        <Task42></Task42>
 
         </View>
     
